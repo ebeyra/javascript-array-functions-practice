@@ -31,6 +31,13 @@ const characters = [
 
 //***MAP***
 //1. Get array of all names
+const charNames = characters.map(function () {
+    names = [];
+    for (let name in characters) {
+        names.push(name.name);
+        return names;
+    }
+})
 //2. Get array of all heights
 //3. Get array of objects with just name and height properties
 //4. Get array of all first names
