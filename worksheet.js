@@ -73,9 +73,21 @@ const nameChar = characters.reduce(function (sum, char) {
 
 //***FILTER***
 //1. Get characters with mass greater than 100
+const filteredMass = characters.filter(function (massNum) {
+    return massNum.mass > 100;
+  })
 //2. Get characters with height less than 200
+const filteredHeight = characters.filter(function (heightNum) {
+    return heightNum.height < 200;
+  })
 //3. Get all male characters
+const maleFilter = characters.filter(function(genderType) {
+    return genderType.gender === "male"
+  })
 //4. Get all female characters
+const femaleFilter = characters.filter(function(genderType) {
+    return genderType.gender === "female"
+  })
 
 //***SORT***
 //1. Sort by mass
