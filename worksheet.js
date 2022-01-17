@@ -91,9 +91,22 @@ const femaleFilter = characters.filter(function(genderType) {
 
 //***SORT***
 //1. Sort by mass
+const sortByMass = characters.sort(function (char1, char2) {
+    return char1.mass - char2.mass;
+  })
 //2. Sort by height
+const sortByHeight = characters.sort(function (char1, char2) {
+    return char1.height - char2.height
+  })
 //3. Sort by name
+const sortByName = characters.sort(function (char1, char2) {
+    return char1.name.localeCompare(char2.name)
+  })
 //4. Sort by gender
+const sortByGender = characters.sort(function (char1, char2) {
+    return char1.gender.localeCompare(char2.gender)
+  })
+
 
 //***EVERY***
 //1. Does every character have blue eyes?
